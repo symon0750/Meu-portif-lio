@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portifólio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sobre mim</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="btn-tema">Mudar tema</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="sobre">
+            <div>
+                <h2>Quem sou eu</h2>
+                <p>
+                    Meu nome é Symon Mendes, sou estudante do <a href="https://www.ifpi.edu.br/teresinacentral">IFPI</a>,
+                    aluno do 1° período de Análise e Desenvolvimento de Sistemas. Atualmente, busco uma vaga de estágio na
+                    área de desenvolvimento de software. Futuramente pretendo me tornar um Desenvolvedor Python, trabalhando
+                    no segmento de Back-end ou Inteligência Artificial.
+                </p>
+            </div>
+            <img src="assets/image.png" alt="eu em toda a minha glória">
+        </section>
+
+        <section id="habilidades">
+            <div>
+                <h2>Habilidades</h2>
+                <p>Conhecimentos que estão sendo aplicados no projeto.</p>
+            </div>
+            <ul id="lista-habilidades"></ul>
+        </section>
+
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container"></div>
+        </section>
+
+
+        <section id="contato">
+            <h2>Contate-me</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome...">
+
+                <label for="numero">Contato:</label>
+                <input type="tel" id="numero" name="contato" required placeholder="Número de telefone">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu email">
+
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="msg" rows="4" required placeholder="Escreva sua mensagem..."></textarea>
+
+                <select id="opcoes" name="opcoes">
+                    <option value="1">Dúvidas</option>
+                    <option value="2">Sugestões</option>
+                    <option value="3">Suporte</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+                <p id="mensagem-form" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Feito no IFPI</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
